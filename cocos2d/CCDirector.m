@@ -207,7 +207,8 @@ static CCDirector *_sharedDirector = nil;
 	[self setProjection: projection_];
 
 	// set other opengl default values
-	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    //@note: @here: make the alpha 0 for use above uiviews.
+	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 }
 
 //
